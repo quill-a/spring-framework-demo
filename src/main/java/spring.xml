@@ -4,6 +4,8 @@
   xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="alien" class="dev.quilla.SpringDemo.Alien" scope="prototype"></bean>
+  <bean id="alien" class="dev.quilla.SpringDemo.Alien">
+    <property name="age" value="10"></property>
+  </bean>
 
 </beans>
