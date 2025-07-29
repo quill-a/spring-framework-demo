@@ -6,6 +6,9 @@
 
   <bean id="alien" class="dev.quilla.SpringDemo.Alien">
     <property name="age" value="10"></property>
+    <property name="laptop" ref="laptop"></property>
   </bean>
+  
+  <bean id="laptop" class="dev.quilla.SpringDemo.Laptop"></bean>
 
 </beans>
