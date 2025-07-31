@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <bean id="alien" class="dev.quilla.SpringDemo.Alien">
-    <property name="age" value="10"></property>
+    <constructor-arg value="12"></constructor-arg>
     <property name="laptop" ref="laptop"></property>
   </bean>
   
