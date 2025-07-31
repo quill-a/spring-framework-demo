@@ -3,22 +3,18 @@ package dev.quilla.SpringDemo;
 public class Alien {
   
   private int age;
-  private Laptop laptop;
+  private Computer com;
   
-//  public Alien() {
-//    System.out.println("Alien Object Created.");
-//  }
-  
-  public Alien(int age) {
-    this.age = age;
+  public Alien() {
+    System.out.println("Alien Object Created.");
   }
 
-  public Laptop getLaptop() {
-    return laptop;
+  public Computer getCom() {
+    return com;
   }
 
-  public void setLaptop(Laptop laptop) {
-    this.laptop = laptop;
+  public void setCom(Computer com) {
+    this.com = com;
   }
 
   public int getAge() {
@@ -32,6 +28,6 @@ public class Alien {
 
 	public void code() {
 		System.out.println("I'm Coding!");
-		laptop.compile();
+		com.compile();
 	}
 }

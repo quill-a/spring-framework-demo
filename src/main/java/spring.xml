@@ -4,11 +4,12 @@
   xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="alien" class="dev.quilla.SpringDemo.Alien">
-    <constructor-arg value="12"></constructor-arg>
-    <property name="laptop" ref="laptop"></property>
+  <bean id="alien" class="dev.quilla.SpringDemo.Alien" autowire="byType">
+    <property name="age" value="10"></property>
   </bean>
+
+  <!-- <bean id="com" class="dev.quilla.SpringDemo.Laptop"></bean> -->
   
-  <bean id="laptop" class="dev.quilla.SpringDemo.Laptop"></bean>
+  <bean id="desktop" class="dev.quilla.SpringDemo.Desktop"></bean>
 
 </beans>
