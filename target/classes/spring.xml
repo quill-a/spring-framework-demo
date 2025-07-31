@@ -6,10 +6,11 @@
 
   <bean id="alien" class="dev.quilla.SpringDemo.Alien" autowire="byType">
     <property name="age" value="10"></property>
+    
   </bean>
 
-  <!-- <bean id="com" class="dev.quilla.SpringDemo.Laptop"></bean> -->
+  <bean id="com" class="dev.quilla.SpringDemo.Laptop"></bean>
   
-  <bean id="desktop" class="dev.quilla.SpringDemo.Desktop"></bean>
+  <bean id="desktop" class="dev.quilla.SpringDemo.Desktop" primary="true"></bean>
 
 </beans>
